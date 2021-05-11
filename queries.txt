@@ -37,7 +37,7 @@ WHERE `name` LIKE "E%";
 
 SELECT id, name, lastname, YEAR(date_of_birth) AS annoNascita, YEAR(NOW()) - YEAR(date_of_birth) AS eta 
 FROM `ospiti` 
-WHERE YEAR(NOW()) - YEAR(date_of_birth) >= 30;
+WHERE YEAR(NOW()) - YEAR(date_of_birth) <= 30;
 
 
 ● Seleziona tutte le prenotazioni precedenti a maggio 2018
